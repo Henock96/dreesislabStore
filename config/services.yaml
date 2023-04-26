@@ -4,6 +4,10 @@ parameters:
     locale: fr_FR
 
 services:
+    app.form.extension.type.admin_user:
+        class: App\Form\Extension\AdminUserTypeExtension
+        tags:
+            - {name: form.type_extension, extended_type: Sylius\Bundle\CoreBundle\Form\Type\User\AdminUserType}
     # Default configuration for services in *this* file
     _defaults:
         # Automatically injects dependencies in your services
