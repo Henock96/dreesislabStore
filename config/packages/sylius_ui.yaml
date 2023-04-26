@@ -1,0 +1,68 @@
+sylius_ui:
+    events:
+        sylius.shop.layout.footer.grid:
+            blocks:
+                before_legacy:
+                    template: "@SyliusUi/Block/_legacySonataEvent.html.twig"
+                    priority: 45
+                    context:
+                        event: sylius.shop.layout.before_footer
+                your_store:
+                    template: "@SyliusShop/Layout/Footer/Grid/_your_store.html.twig"
+                    priority: 40
+                customer_care:
+                    template: "@SyliusShop/Layout/Footer/Grid/_customer_care.html.twig"
+                    priority: 30
+                payment_methods:
+                    template: "@SyliusShop/Layout/Footer/Grid/_payment_methods.html.twig"
+                    priority: 10
+        
+        sylius.shop.homepage:
+            blocks:
+                banner:
+                    template: "@SyliusShop/Homepage/_banner.html.twig"
+                    priority: 60
+                latest_products:
+                    template: "@SyliusShop/Homepage/_latestProducts.html.twig"
+                    priority: 50
+                
+                products_grid:
+                    template: "@SyliusShop/Homepage/_productsGrid.html.twig"
+                    priority: 20
+                about_us:
+                    template: "@SyliusShop/Homepage/_aboutUs.html.twig"
+                    priority: 10
+
+        sylius.shop.layout.topbar:
+            blocks:
+                before_switchers_legacy:
+                    template: "@SyliusUi/Block/_legacySonataEvent.html.twig"
+                    priority: 35
+                    context:
+                        event: sylius.shop.layout.before_currency_switcher
+                currency_switcher:
+                    template: "@SyliusShop/Layout/Topbar/_currencySwitcher.html.twig"
+                    priority: 30
+                locale_switcher:
+                    template: "@SyliusShop/Layout/Topbar/_localeSwitcher.html.twig"
+                    priority: 20
+                custom_social_network:
+                    template: "@SyliusShop/Layout/Topbar/_customSocialNetwork.html.twig"
+                    priority: 40
+        
+        sylius.shop.layout.header.grid:
+            blocks:
+                logo:
+                    template: "@SyliusShop/Layout/Header/_logo.html.twig"
+                    priority: 20
+                content:
+                    template: "@SyliusShop/Layout/Header/_content.html.twig"
+                    priority: 20
+                cart:
+                    template: "@SyliusShop/Layout/Header/_cart.html.twig"
+                    priority: 10
+                custom_login:
+                    template: "@SyliusShop/Layout/Header/_customLogin.html.twig"
+                    priority: 20
+
+        

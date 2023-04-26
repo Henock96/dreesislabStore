@@ -1,0 +1,19 @@
+sylius_fixtures:
+    suites:
+        default:
+            fixtures:
+                currency:
+                    options:
+                        currencies: ['XOF']
+                channel:
+                    options:
+                        custom:
+                            dreesis_web_store:
+                                name: "Dreesis Web Store"
+                                code: "D_WEB"
+                                locales: 
+                                    - "%locale%"
+                                currencies:
+                                    - "XOF"
+                                enabled: true
+                                

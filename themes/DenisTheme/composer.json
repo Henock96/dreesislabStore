@@ -1,0 +1,14 @@
+{
+    "name": "dreesislabstore/denis-theme",
+    "authors": [
+        {
+            "name": "Henok Mipoka",
+            "email": "hmipoka@gmail.com"
+        }
+    ],
+    "extra": {
+        "sylius-theme":{
+            "title": "DenisTheme"
+        }
+    }
+}
